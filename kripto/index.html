@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+    <title>Jelentkezési lap, Cryptológusok</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mt-5 mb-5">Jelentkezési lap, Cryptológusok!</h1>
+    <form id="sign-form">
+        <div class="mb-4">
+            <label for="discordName" class="form-label mb-3">Discord azonosító</label>
+            <input type="text" class="form-control" id="discordName" placeholder="dummy#0001" name="discord">
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Mi történhet, ha kiadod a crypto tárcádhoz tartozó seed phrase-eket, vagy private key-t?</label>
+            <textarea type="text" class="form-control" id="question1" name="q1"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Mondj példát a jelszavaid, seed phrase-eid biztonságos tárolására!</label>
+            <textarea type="text" class="form-control" id="question2" name="q2"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Miért veszélyes egy olyan projektbe fektetni, aminek hiányos a leírása, kevés követője van, a készítői ismeretlenek és feltűnően nagy mozgásokat lehet látni az árban?</label>
+            <textarea type="text" class="form-control" id="question3" name="q3"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Mi a CEX és a DEX közötti különbség?</label>
+            <textarea type="text" class="form-control" id="question4" name="q4"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Mi történik, ha nem megfelelő láncon utalsz kriptóvalutát (nem azon a láncon küldöd, amin a céltárca van)?</label>
+            <textarea type="text" class="form-control" id="question5" name="q5"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Hogyan kell MAGIC-et venni?</label>
+            <textarea type="text" class="form-control" id="question6" name="q6"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Hogyan kell MAGIC-et venni?</label>
+            <textarea type="text" class="form-control" id="question7" name="q7"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="question4" class="form-label mb-3" >Hogyan kell MAGIC-et venni?</label>
+            <textarea type="text" class="form-control" id="question8" name="q8"></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label mb-3">Tudomásul vetted, és betartod a szabályzatunkat?</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question1" id="questionYes" value="yes">
+                <label class="form-check-label" for="questionYes">Igen</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit" disabled>Beküldés</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- <hr>
+<div class="mb-4">
+    <label class="form-label mb-3">Hányszor regisztrált új accountot bevallása szerint a Discordra, az eredetileg Cryptojózsi néven garázdálkodó zabolátlan blokklánc-lidérc, aki elborult fiatalsága ködén látja a kripto-világot, és csodálatos elemzői tudásával csak emeli a társaság fényét?</label>
+    <br>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio1" value="1" checked="checked">
+        <label class="form-check-label" for="question1Radio1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio2" value="2" >
+        <label class="form-check-label" for="question1Radio2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio3" value="3">
+        <label class="form-check-label" for="question1Radio3">3</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio4" value="4">
+        <label class="form-check-label" for="question1Radio4">4</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio5" value="5">
+        <label class="form-check-label" for="question1Radio5">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="question1" id="question1Radio6" value="6">
+        <label class="form-check-label" for="question1Radio6">6</label>
+    </div>
+</div> -->
